@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6438252E2659DFF000295770 /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6438252D2659DFF000295770 /* ApolloCore */; };
+		643825302659DFF000295770 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6438252F2659DFF000295770 /* ApolloSQLite */; };
+		643825322659DFF000295770 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 643825312659DFF000295770 /* ApolloWebSocket */; };
+		643825342659DFF000295770 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 643825332659DFF000295770 /* Apollo */; };
+		643825362659DFF000295770 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 643825352659DFF000295770 /* ApolloCodegenLib */; };
 		649DF8782655EF32005A69C1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF8772655EF32005A69C1 /* Tests_iOS.swift */; };
 		649DF8832655EF32005A69C1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF8822655EF32005A69C1 /* Tests_macOS.swift */; };
 		649DF8852655EF32005A69C1 /* FlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85C2655EF2C005A69C1 /* FlixApp.swift */; };
@@ -36,6 +41,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6438252B2659DF2400295770 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		649DF85C2655EF2C005A69C1 /* FlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixApp.swift; sourceTree = "<group>"; };
 		649DF85D2655EF2C005A69C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +78,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643825362659DFF000295770 /* ApolloCodegenLib in Frameworks */,
+				6438252E2659DFF000295770 /* ApolloCore in Frameworks */,
+				643825342659DFF000295770 /* Apollo in Frameworks */,
+				643825322659DFF000295770 /* ApolloWebSocket in Frameworks */,
+				643825302659DFF000295770 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,12 +190,20 @@
 				649DF85F2655EF32005A69C1 /* Sources */,
 				649DF8602655EF32005A69C1 /* Frameworks */,
 				649DF8612655EF32005A69C1 /* Resources */,
+				6438252B2659DF2400295770 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Flix (iOS)";
+			packageProductDependencies = (
+				6438252D2659DFF000295770 /* ApolloCore */,
+				6438252F2659DFF000295770 /* ApolloSQLite */,
+				643825312659DFF000295770 /* ApolloWebSocket */,
+				643825332659DFF000295770 /* Apollo */,
+				643825352659DFF000295770 /* ApolloCodegenLib */,
+			);
 			productName = "Flix (iOS)";
 			productReference = 649DF8632655EF32005A69C1 /* Flix.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +295,9 @@
 				Base,
 			);
 			mainGroup = 649DF8562655EF2C005A69C1;
+			packageReferences = (
+				6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 649DF8642655EF32005A69C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -704,6 +738,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.43.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6438252D2659DFF000295770 /* ApolloCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCore;
+		};
+		6438252F2659DFF000295770 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		643825312659DFF000295770 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		643825332659DFF000295770 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		643825352659DFF000295770 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6438252C2659DFF000295770 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 649DF8572655EF2C005A69C1 /* Project object */;
 }
