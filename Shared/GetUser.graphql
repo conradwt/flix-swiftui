@@ -1,0 +1,16 @@
+"""
+//
+//  GetUser.graphql.swift
+//  Flix
+//
+//  Created by Conrad Taylor on 5/23/21.
+//
+"""
+
+query getUser($id: ID!) {
+  user(id: $id) {
+    name
+    username
+    email
+  }
+}

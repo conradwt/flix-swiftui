@@ -1,0 +1,20 @@
+"""
+//
+//  GetMovie.graphql
+//  Flix
+//
+//  Created by Conrad Taylor on 5/23/21.
+//
+"""
+
+query getMovie($id: ID!) {
+  movie(id: $id) {
+    description
+    duration
+    title
+    rating
+    releasedOn
+    title
+    totalGross
+  }
+}

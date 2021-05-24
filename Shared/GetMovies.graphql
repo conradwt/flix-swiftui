@@ -1,0 +1,16 @@
+"""
+//
+//  GetMovies.graphql
+//  Flix
+//
+//  Created by Conrad Taylor on 5/23/21.
+//
+"""
+
+query getMovies($filter: String) {
+  movies(filter: $filter) {
+    title
+    totalGross
+    rating
+  }
+}
