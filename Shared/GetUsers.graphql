@@ -1,12 +1,3 @@
-"""
-//
-//  GetUsers.graphql.swift
-//  Flix
-//
-//  Created by Conrad Taylor on 5/23/21.
-//
-"""
-
 query getUsers {
   users {
     name
