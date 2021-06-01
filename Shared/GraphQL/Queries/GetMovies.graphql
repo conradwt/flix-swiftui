@@ -1,0 +1,9 @@
+query GetMovies($filter: String) {
+  movies(filter: $filter) {
+    id
+    posterUrl
+    rating
+    title
+    totalGross
+  }
+}

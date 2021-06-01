@@ -1,8 +1,10 @@
-query getMovie($slug: String!) {
+query GetMovie($slug: String!) {
   movie(slug: $slug) {
+    id
     description
     director
     duration
+    posterUrl
     rating
     releasedOn
     title

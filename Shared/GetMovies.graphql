@@ -1,7 +1,0 @@
-query getMovies($filter: String) {
-  movies(filter: $filter) {
-    title
-    totalGross
-    rating
-  }
-}
