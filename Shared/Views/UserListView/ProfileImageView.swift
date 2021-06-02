@@ -13,7 +13,7 @@ struct ProfileImageView: View {
     var height: CGFloat
   
     var body: some View {
-      Image(imageName)
+      Image("conradwt")
         .resizable()
         .scaledToFit()
         .frame(width: width, height: height, alignment: .center)

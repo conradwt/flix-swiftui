@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640A2E362667505F0001425E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A2E352667505F0001425E /* MainView.swift */; };
+		640A2E372667505F0001425E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A2E352667505F0001425E /* MainView.swift */; };
 		6416FD4426632C5D007141FA /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4326632C5D007141FA /* Apollo.swift */; };
 		6416FD4526632C5D007141FA /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4326632C5D007141FA /* Apollo.swift */; };
 		6416FD482663311B007141FA /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD472663311B007141FA /* MovieListViewModel.swift */; };
@@ -83,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		640A2E352667505F0001425E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6416FD4326632C5D007141FA /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		6416FD472663311B007141FA /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		6416FD4B266333D7007141FA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
@@ -171,6 +174,7 @@
 				6418DA332664DCBE000964D7 /* MovieDetailView.swift */,
 				64A111B62665C8C20094D018 /* UserListView */,
 				64A111BD2665CC4E0094D018 /* UserDetailView.swift */,
+				640A2E352667505F0001425E /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				649DF8872655EF32005A69C1 /* MovieListView.swift in Sources */,
+				640A2E362667505F0001425E /* MainView.swift in Sources */,
 				649DF8852655EF32005A69C1 /* FlixApp.swift in Sources */,
 				64A111B82665C99A0094D018 /* UserListViewModel.swift in Sources */,
 				6418DA342664DCBE000964D7 /* MovieDetailView.swift in Sources */,
@@ -507,6 +512,7 @@
 				64A111B92665C99A0094D018 /* UserListViewModel.swift in Sources */,
 				6416FD5126633575007141FA /* Movie.swift in Sources */,
 				64A111BF2665CC4E0094D018 /* UserDetailView.swift in Sources */,
+				640A2E372667505F0001425E /* MainView.swift in Sources */,
 				646BE45E265B4658009CB03D /* GetMovies.graphql in Sources */,
 				64A111C22665D9BE0094D018 /* ProfileImageView.swift in Sources */,
 				6416FD4D266333D7007141FA /* MovieCell.swift in Sources */,

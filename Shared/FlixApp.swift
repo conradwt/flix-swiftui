@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct FlixApp: App {
-    var body: some Scene {
-        WindowGroup {
-            MovieListView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      MainView()
     }
+  }
 }
