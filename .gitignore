@@ -117,4 +117,4 @@ Shared/schema.json
 Shared/operationIDs.json
 ApolloCodegen/*
 Shared/API.swift
-Flix.xcodeproj/project.xcworkspace/xcuserdata/conradwt.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserstate
