@@ -113,3 +113,8 @@ xcuserdata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,swiftpm,swiftpackagemanager
+Shared/schema.json
+Shared/operationIDs.json
+ApolloCodegen/*
+Shared/API.swift
+Flix.xcodeproj/project.xcworkspace/xcuserdata/conradwt.xcuserdatad/UserInterfaceState.xcuserstate

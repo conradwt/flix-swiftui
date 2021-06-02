@@ -3,20 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6416FD4426632C5D007141FA /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4326632C5D007141FA /* Apollo.swift */; };
+		6416FD4526632C5D007141FA /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4326632C5D007141FA /* Apollo.swift */; };
+		6416FD482663311B007141FA /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD472663311B007141FA /* MovieListViewModel.swift */; };
+		6416FD492663311B007141FA /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD472663311B007141FA /* MovieListViewModel.swift */; };
+		6416FD4C266333D7007141FA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4B266333D7007141FA /* MovieCell.swift */; };
+		6416FD4D266333D7007141FA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4B266333D7007141FA /* MovieCell.swift */; };
+		6416FD5026633575007141FA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4F26633575007141FA /* Movie.swift */; };
+		6416FD5126633575007141FA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4F26633575007141FA /* Movie.swift */; };
+		6418DA342664DCBE000964D7 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418DA332664DCBE000964D7 /* MovieDetailView.swift */; };
+		6418DA352664DCBE000964D7 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418DA332664DCBE000964D7 /* MovieDetailView.swift */; };
+		642D36FA265B5C2400EC7FF7 /* GetMovie.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 642D36F8265B5C2400EC7FF7 /* GetMovie.graphql */; };
+		642D36FD265B5FD500EC7FF7 /* GetUser.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 642D36FB265B5FD500EC7FF7 /* GetUser.graphql */; };
+		642D3700265B60CC00EC7FF7 /* GetUsers.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 642D36FE265B60CC00EC7FF7 /* GetUsers.graphql */; };
+		646BE45E265B4658009CB03D /* GetMovies.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 646BE45C265B4658009CB03D /* GetMovies.graphql */; };
+		646BE461265B4AD5009CB03D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 646BE460265B4AD5009CB03D /* schema.json */; };
+		646BE462265B4AD5009CB03D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 646BE460265B4AD5009CB03D /* schema.json */; };
+		6476BDC1265B56CF0002CE95 /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6476BDC0265B56CF0002CE95 /* ApolloCore */; };
+		6476BDC3265B56CF0002CE95 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6476BDC2265B56CF0002CE95 /* ApolloSQLite */; };
+		6476BDC5265B56CF0002CE95 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 6476BDC4265B56CF0002CE95 /* ApolloWebSocket */; };
+		6476BDC7265B56CF0002CE95 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 6476BDC6265B56CF0002CE95 /* Apollo */; };
+		6476BDC9265B56CF0002CE95 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 6476BDC8265B56CF0002CE95 /* ApolloCodegenLib */; };
 		649DF8782655EF32005A69C1 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF8772655EF32005A69C1 /* Tests_iOS.swift */; };
-		649DF8832655EF32005A69C1 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF8822655EF32005A69C1 /* Tests_macOS.swift */; };
 		649DF8852655EF32005A69C1 /* FlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85C2655EF2C005A69C1 /* FlixApp.swift */; };
 		649DF8862655EF32005A69C1 /* FlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85C2655EF2C005A69C1 /* FlixApp.swift */; };
-		649DF8872655EF32005A69C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85D2655EF2C005A69C1 /* ContentView.swift */; };
-		649DF8882655EF32005A69C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85D2655EF2C005A69C1 /* ContentView.swift */; };
+		649DF8872655EF32005A69C1 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85D2655EF2C005A69C1 /* MovieListView.swift */; };
+		649DF8882655EF32005A69C1 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF85D2655EF2C005A69C1 /* MovieListView.swift */; };
 		649DF8892655EF32005A69C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649DF85E2655EF32005A69C1 /* Assets.xcassets */; };
 		649DF88A2655EF32005A69C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649DF85E2655EF32005A69C1 /* Assets.xcassets */; };
 		649DF89B2655EF71005A69C1 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 649DF8992655EF71005A69C1 /* LICENSE.md */; };
 		649DF89C2655EF71005A69C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 649DF89A2655EF71005A69C1 /* README.md */; };
+		64A111B42665C8A90094D018 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111B32665C8A90094D018 /* UserListView.swift */; };
+		64A111B52665C8A90094D018 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111B32665C8A90094D018 /* UserListView.swift */; };
+		64A111B82665C99A0094D018 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111B72665C99A0094D018 /* UserListViewModel.swift */; };
+		64A111B92665C99A0094D018 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111B72665C99A0094D018 /* UserListViewModel.swift */; };
+		64A111BB2665CA970094D018 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111BA2665CA970094D018 /* UserCell.swift */; };
+		64A111BC2665CA970094D018 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111BA2665CA970094D018 /* UserCell.swift */; };
+		64A111BE2665CC4E0094D018 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111BD2665CC4E0094D018 /* UserDetailView.swift */; };
+		64A111BF2665CC4E0094D018 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111BD2665CC4E0094D018 /* UserDetailView.swift */; };
+		64A111C12665D9BE0094D018 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111C02665D9BE0094D018 /* ProfileImageView.swift */; };
+		64A111C22665D9BE0094D018 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A111C02665D9BE0094D018 /* ProfileImageView.swift */; };
+		64CEACFE265B706C001632D8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DF8822655EF32005A69C1 /* Tests_macOS.swift */; };
+		64EEBF42265DA1DB008D63A8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEBF41265DA1DB008D63A8 /* API.swift */; };
+		64EEBF43265DA1DB008D63A8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEBF41265DA1DB008D63A8 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,23 +69,52 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6438252B2659DF2400295770 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6416FD4326632C5D007141FA /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+		6416FD472663311B007141FA /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		6416FD4B266333D7007141FA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		6416FD4F26633575007141FA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6418DA332664DCBE000964D7 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		642D36F8265B5C2400EC7FF7 /* GetMovie.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetMovie.graphql; sourceTree = "<group>"; };
+		642D36FB265B5FD500EC7FF7 /* GetUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetUser.graphql; sourceTree = "<group>"; };
+		642D36FE265B60CC00EC7FF7 /* GetUsers.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetUsers.graphql; sourceTree = "<group>"; };
+		64660E73265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64660E74265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64660E75265B662600A0CE79 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64660E76265B662600A0CE79 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		646BE45C265B4658009CB03D /* GetMovies.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetMovies.graphql; sourceTree = "<group>"; };
+		646BE460265B4AD5009CB03D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		649DF85C2655EF2C005A69C1 /* FlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixApp.swift; sourceTree = "<group>"; };
-		649DF85D2655EF2C005A69C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		649DF85D2655EF2C005A69C1 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		649DF85E2655EF32005A69C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		649DF8632655EF32005A69C1 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649DF8662655EF32005A69C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		649DF86B2655EF32005A69C1 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649DF86D2655EF32005A69C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649DF86E2655EF32005A69C1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		649DF8732655EF32005A69C1 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649DF8772655EF32005A69C1 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		649DF8792655EF32005A69C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		649DF87E2655EF32005A69C1 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649DF8822655EF32005A69C1 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		649DF8842655EF32005A69C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649DF8992655EF71005A69C1 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		649DF89A2655EF71005A69C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		64A111B32665C8A90094D018 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		64A111B72665C99A0094D018 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		64A111BA2665CA970094D018 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		64A111BD2665CC4E0094D018 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		64A111C02665D9BE0094D018 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		64EEBF41265DA1DB008D63A8 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6476BDC9265B56CF0002CE95 /* ApolloCodegenLib in Frameworks */,
+				6476BDC1265B56CF0002CE95 /* ApolloCore in Frameworks */,
+				6476BDC7265B56CF0002CE95 /* Apollo in Frameworks */,
+				6476BDC5265B56CF0002CE95 /* ApolloWebSocket in Frameworks */,
+				6476BDC3265B56CF0002CE95 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +154,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6416FD462663307C007141FA /* MovieListView */ = {
+			isa = PBXGroup;
+			children = (
+				649DF85D2655EF2C005A69C1 /* MovieListView.swift */,
+				6416FD472663311B007141FA /* MovieListViewModel.swift */,
+				6416FD4B266333D7007141FA /* MovieCell.swift */,
+			);
+			path = MovieListView;
+			sourceTree = "<group>";
+		};
+		6416FD4A266333B7007141FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6416FD462663307C007141FA /* MovieListView */,
+				6418DA332664DCBE000964D7 /* MovieDetailView.swift */,
+				64A111B62665C8C20094D018 /* UserListView */,
+				64A111BD2665CC4E0094D018 /* UserDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6416FD4E26633565007141FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6416FD4F26633575007141FA /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64251D5E265B6FA30003281F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64660E73265B662600A0CE79 /* Flix.app */,
+				64660E76265B662600A0CE79 /* Tests macOS.xctest */,
+				64660E75265B662600A0CE79 /* Tests iOS.xctest */,
+				64660E74265B662600A0CE79 /* Flix.app */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		649DF8562655EF2C005A69C1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,29 +204,23 @@
 				649DF86C2655EF32005A69C1 /* macOS */,
 				649DF8762655EF32005A69C1 /* Tests iOS */,
 				649DF8812655EF32005A69C1 /* Tests macOS */,
-				649DF8642655EF32005A69C1 /* Products */,
+				64251D5E265B6FA30003281F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 		649DF85B2655EF2C005A69C1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				64BA8E2A26657CB2005BA4C0 /* GraphQL */,
+				6416FD4E26633565007141FA /* Models */,
+				646BE460265B4AD5009CB03D /* schema.json */,
 				649DF85C2655EF2C005A69C1 /* FlixApp.swift */,
-				649DF85D2655EF2C005A69C1 /* ContentView.swift */,
+				6416FD4A266333B7007141FA /* Views */,
 				649DF85E2655EF32005A69C1 /* Assets.xcassets */,
+				64EEBF41265DA1DB008D63A8 /* API.swift */,
+				6416FD4326632C5D007141FA /* Apollo.swift */,
 			);
 			path = Shared;
-			sourceTree = "<group>";
-		};
-		649DF8642655EF32005A69C1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				649DF8632655EF32005A69C1 /* Flix.app */,
-				649DF86B2655EF32005A69C1 /* Flix.app */,
-				649DF8732655EF32005A69C1 /* Tests iOS.xctest */,
-				649DF87E2655EF32005A69C1 /* Tests macOS.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		649DF8652655EF32005A69C1 /* iOS */ = {
@@ -157,6 +258,36 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		64A111B62665C8C20094D018 /* UserListView */ = {
+			isa = PBXGroup;
+			children = (
+				64A111B32665C8A90094D018 /* UserListView.swift */,
+				64A111B72665C99A0094D018 /* UserListViewModel.swift */,
+				64A111BA2665CA970094D018 /* UserCell.swift */,
+				64A111C02665D9BE0094D018 /* ProfileImageView.swift */,
+			);
+			path = UserListView;
+			sourceTree = "<group>";
+		};
+		64BA8E2A26657CB2005BA4C0 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				64BA8E2B26657CC4005BA4C0 /* Queries */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		64BA8E2B26657CC4005BA4C0 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				646BE45C265B4658009CB03D /* GetMovies.graphql */,
+				642D36F8265B5C2400EC7FF7 /* GetMovie.graphql */,
+				642D36FB265B5FD500EC7FF7 /* GetUser.graphql */,
+				642D36FE265B60CC00EC7FF7 /* GetUsers.graphql */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,17 +295,26 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 649DF88D2655EF32005A69C1 /* Build configuration list for PBXNativeTarget "Flix (iOS)" */;
 			buildPhases = (
+				64CEACFF265B710F001632D8 /* Generate Apollo GraphQL API */,
 				649DF85F2655EF32005A69C1 /* Sources */,
 				649DF8602655EF32005A69C1 /* Frameworks */,
 				649DF8612655EF32005A69C1 /* Resources */,
+				6438252B2659DF2400295770 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Flix (iOS)";
+			packageProductDependencies = (
+				6476BDC0265B56CF0002CE95 /* ApolloCore */,
+				6476BDC2265B56CF0002CE95 /* ApolloSQLite */,
+				6476BDC4265B56CF0002CE95 /* ApolloWebSocket */,
+				6476BDC6265B56CF0002CE95 /* Apollo */,
+				6476BDC8265B56CF0002CE95 /* ApolloCodegenLib */,
+			);
 			productName = "Flix (iOS)";
-			productReference = 649DF8632655EF32005A69C1 /* Flix.app */;
+			productReference = 64660E73265B662600A0CE79 /* Flix.app */;
 			productType = "com.apple.product-type.application";
 		};
 		649DF86A2655EF32005A69C1 /* Flix (macOS) */ = {
@@ -191,7 +331,7 @@
 			);
 			name = "Flix (macOS)";
 			productName = "Flix (macOS)";
-			productReference = 649DF86B2655EF32005A69C1 /* Flix.app */;
+			productReference = 64660E74265B662600A0CE79 /* Flix.app */;
 			productType = "com.apple.product-type.application";
 		};
 		649DF8722655EF32005A69C1 /* Tests iOS */ = {
@@ -209,7 +349,7 @@
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
-			productReference = 649DF8732655EF32005A69C1 /* Tests iOS.xctest */;
+			productReference = 64660E75265B662600A0CE79 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		649DF87D2655EF32005A69C1 /* Tests macOS */ = {
@@ -227,7 +367,7 @@
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
-			productReference = 649DF87E2655EF32005A69C1 /* Tests macOS.xctest */;
+			productReference = 64660E76265B662600A0CE79 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +404,10 @@
 				Base,
 			);
 			mainGroup = 649DF8562655EF2C005A69C1;
-			productRefGroup = 649DF8642655EF32005A69C1 /* Products */;
+			packageReferences = (
+				6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 649DF8562655EF2C005A69C1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -281,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646BE461265B4AD5009CB03D /* schema.json in Resources */,
 				649DF89C2655EF71005A69C1 /* README.md in Resources */,
 				649DF89B2655EF71005A69C1 /* LICENSE.md in Resources */,
 				649DF8892655EF32005A69C1 /* Assets.xcassets in Resources */,
@@ -291,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646BE462265B4AD5009CB03D /* schema.json in Resources */,
 				649DF88A2655EF32005A69C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,13 +456,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64CEACFF265B710F001632D8 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		649DF85F2655EF32005A69C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649DF8872655EF32005A69C1 /* ContentView.swift in Sources */,
+				649DF8872655EF32005A69C1 /* MovieListView.swift in Sources */,
 				649DF8852655EF32005A69C1 /* FlixApp.swift in Sources */,
+				64A111B82665C99A0094D018 /* UserListViewModel.swift in Sources */,
+				6418DA342664DCBE000964D7 /* MovieDetailView.swift in Sources */,
+				64A111C12665D9BE0094D018 /* ProfileImageView.swift in Sources */,
+				64A111BE2665CC4E0094D018 /* UserDetailView.swift in Sources */,
+				6416FD4426632C5D007141FA /* Apollo.swift in Sources */,
+				64EEBF42265DA1DB008D63A8 /* API.swift in Sources */,
+				6416FD4C266333D7007141FA /* MovieCell.swift in Sources */,
+				64A111BB2665CA970094D018 /* UserCell.swift in Sources */,
+				64A111B42665C8A90094D018 /* UserListView.swift in Sources */,
+				6416FD5026633575007141FA /* Movie.swift in Sources */,
+				6416FD482663311B007141FA /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +502,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649DF8882655EF32005A69C1 /* ContentView.swift in Sources */,
+				649DF8882655EF32005A69C1 /* MovieListView.swift in Sources */,
+				64CEACFE265B706C001632D8 /* Tests_macOS.swift in Sources */,
+				64A111B92665C99A0094D018 /* UserListViewModel.swift in Sources */,
+				6416FD5126633575007141FA /* Movie.swift in Sources */,
+				64A111BF2665CC4E0094D018 /* UserDetailView.swift in Sources */,
+				646BE45E265B4658009CB03D /* GetMovies.graphql in Sources */,
+				64A111C22665D9BE0094D018 /* ProfileImageView.swift in Sources */,
+				6416FD4D266333D7007141FA /* MovieCell.swift in Sources */,
+				642D3700265B60CC00EC7FF7 /* GetUsers.graphql in Sources */,
+				64A111B52665C8A90094D018 /* UserListView.swift in Sources */,
+				6416FD4526632C5D007141FA /* Apollo.swift in Sources */,
+				6418DA352664DCBE000964D7 /* MovieDetailView.swift in Sources */,
+				642D36FA265B5C2400EC7FF7 /* GetMovie.graphql in Sources */,
 				649DF8862655EF32005A69C1 /* FlixApp.swift in Sources */,
+				64EEBF43265DA1DB008D63A8 /* API.swift in Sources */,
+				64A111BC2665CA970094D018 /* UserCell.swift in Sources */,
+				642D36FD265B5FD500EC7FF7 /* GetUser.graphql in Sources */,
+				6416FD492663311B007141FA /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +535,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649DF8832655EF32005A69C1 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RX8KMMGN2G;
@@ -548,6 +741,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RX8KMMGN2G;
@@ -704,6 +898,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.42.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6476BDC0265B56CF0002CE95 /* ApolloCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCore;
+		};
+		6476BDC2265B56CF0002CE95 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		6476BDC4265B56CF0002CE95 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		6476BDC6265B56CF0002CE95 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		6476BDC8265B56CF0002CE95 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6476BDBF265B56CF0002CE95 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 649DF8572655EF2C005A69C1 /* Project object */;
 }
