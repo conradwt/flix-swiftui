@@ -1,5 +1,5 @@
-query GetMovie($slug: String!) {
-  movie(slug: $slug) {
+query MovieDetail($id: ID!) {
+  movie(id: $id) {
     id
     description
     director

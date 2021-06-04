@@ -1,4 +1,4 @@
-query GetMovies($filter: String) {
+query MovieList($filter: String) {
   movies(filter: $filter) {
     id
     posterUrl

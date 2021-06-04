@@ -1,9 +1,10 @@
-query GetUser($id: ID!) {
+query UserDetail($id: ID!) {
   user(id: $id) {
     id
     avatarUrl
+    email
+    memberSince
     name
     username
-    email
   }
 }

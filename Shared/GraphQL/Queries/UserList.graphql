@@ -1,9 +1,8 @@
-query GetUsers {
+query UserList {
   users {
     id
     avatarUrl
     name
-    username
-    email
+    memberSince
   }
 }
