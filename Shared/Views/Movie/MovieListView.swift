@@ -15,7 +15,8 @@ struct MovieListView: View {
       VStack {
         List {
           ForEach(viewModel.movies, id: \.id) { movie in
-            MovieCell(movie: movie)
+            MovieCell(movieId: movie.id)
+//            Text("Movie List View")
           }
         }
         .listStyle(PlainListStyle())
@@ -23,14 +24,11 @@ struct MovieListView: View {
   
       }
 
-//      if viewModel.isLoading { LoadingView() }
     }
-    .onAppear { viewModel.getMovies() }
-    
-    
-//    .alert(item: $viewModel.alertItem) { alertItem in
-//      Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-//    }
+    .onAppear {
+      viewModel.onAppear()
+    }
+
   }
 }
 

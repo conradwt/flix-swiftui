@@ -9,13 +9,14 @@ import SwiftUI
 
 struct UserListView: View {
   @StateObject private var viewModel = UserListViewModel()
-  
+
   var body: some View {
     NavigationView {
       VStack {
         List {
           ForEach(viewModel.users, id: \.id) { user in
-            UserCell(user: user)
+            UserCell(userId: user.id)
+//            Text("User List View")
           }
         }
         .listStyle(PlainListStyle())
@@ -23,12 +24,11 @@ struct UserListView: View {
         
       }
       
-      //      if viewModel.isLoading { LoadingView() }
-    }.onAppear { viewModel.getUsers() }
+    }
+    .onAppear {
+      viewModel.onAppear()
+    }
     
-    //    .alert(item: $viewModel.alertItem) { alertItem in
-    //      Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
-    //    }
   }
 }
 
