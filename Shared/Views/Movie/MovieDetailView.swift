@@ -29,7 +29,7 @@ struct MovieDetailView: View {
       
       Text(viewModel.movie?.rating ?? "RATING NOT SET")
       
-      Text(Movie.numberToCurrency(viewModel.movie?.totalGross ?? "0")!)
+      Text(MovieHelper.numberToCurrency(viewModel.movie?.totalGross ?? "0")!)
       
       Spacer()
     }

@@ -40,8 +40,9 @@ final class UserApiService: UserApiServiceProtocol {
         completion(nil)
         
       case .success(let data):
-        let model = data.data?.users?.decodeModel(type: UsersResponse.self)
-        completion(model?.results)
+//        let model = data.data?.users?.decodeModel(type: UsersResponse.self)
+        let model = data.data?.users as? [User]
+        completion(model)
       }
       
     }

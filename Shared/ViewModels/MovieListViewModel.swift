@@ -30,25 +30,4 @@ final class MovieListViewModel: ObservableObject {
       self.state = .complete
     }
   }
-  
-  
-//  init() {
-//    setup()
-//  }
-//
-//  func setup() {
-//
-//    state = .loading
-//
-//    repo.getEpisodes { episodes in
-//      guard let episodes = episodes else {
-//        self.state = .error
-//        return
-//      }
-//
-//      self.episodes = episodes
-//      self.state = .complete
-//
-//    }
-//  }
 }

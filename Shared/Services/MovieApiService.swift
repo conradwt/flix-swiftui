@@ -24,6 +24,7 @@ final class MovieApiService: MovieApiServiceProtocol {
         
       case .success(let data):
         let model = data.data?.movie?.decodeModel(type: Movie.self)
+//        let model = Movie(movie: (data.data?.movie)!)
         completion(model)
       }
       
@@ -40,8 +41,9 @@ final class MovieApiService: MovieApiServiceProtocol {
         completion(nil)
         
       case .success(let data):
-        let model = data.data?.movies?.decodeModel(type: MoviesResponse.self)
-        completion(model?.results)
+//        let model = data.data?.movies?.decodeModel(type: MoviesResponse.self)
+        let model = data.data?.movies as? [Movie]
+        completion(model)
       }
       
     }

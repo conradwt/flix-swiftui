@@ -31,7 +31,7 @@ struct MovieCell: View {
             .font(.subheadline)
             .foregroundColor(.secondary)
 
-          Text("\(Movie.numberToCurrency(viewModel.movie?.totalGross ?? "0")!) Gross")
+          Text("\(MovieHelper.numberToCurrency(viewModel.movie?.totalGross ?? "0")!) Gross")
             .font(.subheadline)
             .foregroundColor(.secondary)
         }

@@ -8,12 +8,30 @@
 import Foundation
 
 struct User: Decodable {
-  var id: String
-  var avatarUrl: String
-  var email: String?
-  var memberSince: String
-  var name: String
-  var username: String?
+  let id: String
+  let avatarUrl: String
+  let email: String?
+  let memberSince: String
+  let name: String
+  let username: String?
+  
+  init(user: UserListQuery.Data.User) {
+    self.id = user.id
+    self.avatarUrl = user.avatarUrl
+    self.email = nil
+    self.memberSince = user.memberSince
+    self.name = user.name
+    self.username = nil
+  }
+  
+  init(user: UserDetailQuery.Data.User) {
+    self.id = user.id
+    self.avatarUrl = user.avatarUrl
+    self.email = user.email
+    self.memberSince = user.memberSince
+    self.name = user.name
+    self.username = user.username
+  }
 }
 
 struct UsersResponse: Decodable {
