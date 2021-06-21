@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MovieDetailView: View {
   var movie: MovieListQuery.Data.Movie
   
@@ -14,12 +15,8 @@ struct MovieDetailView: View {
     VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
       Spacer()
       
-      Image("placeholder")
-        .resizable()
-        .scaledToFit()
-        .frame(width: 250)
-//        .cornerRadius(12)
-      
+      MovieImageView(imageUrl: movie.posterUrl, width: 250, height: 298)
+            
       Text(movie.title)
         .font(.title2)
         .fontWeight(.semibold)
