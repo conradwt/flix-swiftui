@@ -15,10 +15,24 @@ struct MovieCell: View {
   var body: some View {
     NavigationLink(destination: MovieDetailView(movie: movie)) {
       HStack {
-        Image("placeholder")
-          .resizable()
-          .scaledToFit()
-          .frame(width: 100, height: 148)
+        AsyncImage(url: URL(string: movie.posterUrl),
+                   transaction: Transaction(animation: .spring())) { phase in
+          switch phase {
+          case .empty:
+            Color.purple.opacity(0.1)
+          case .success(let image):
+            image
+              .resizable()
+              .scaledToFit()
+          case .failure(_):
+            Image("placeholder")
+              .resizable()
+              .scaledToFit()
+          @unknown default:
+            Image(systemName: "exclamationmark.icloud")
+          }
+        }
+        .frame(width: 100, height: 148)
 
         VStack(alignment: .leading, spacing: 10) {
           Text(movie.title)
