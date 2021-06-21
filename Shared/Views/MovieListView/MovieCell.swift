@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MovieCell: View {
-  var movie: GetMoviesQuery.Data.Movie
+  @StateObject private var viewModel = MovieDetailViewModel()
+  var movie: MovieListQuery.Data.Movie
   
   var body: some View {
     NavigationLink(destination: MovieDetailView(movie: movie)) {
@@ -16,9 +18,8 @@ struct MovieCell: View {
         Image("placeholder")
           .resizable()
           .scaledToFit()
-          .frame(height: 100)
-  //        .cornerRadius(12)
-        
+          .frame(width: 100, height: 148)
+
         VStack(alignment: .leading, spacing: 10) {
           Text(movie.title)
             .font(.title2)
@@ -39,13 +40,16 @@ struct MovieCell: View {
   }
 }
 
-struct MovieCell_Previews: PreviewProvider {
-  static var previews: some View {
-    MovieCell(movie:
-                GetMoviesQuery.Data.Movie(id: "500",
-                                          posterUrl: "spiderman",
-                                          rating: "PG-13",
-                                          title: "Spider-Man",
-                                          totalGross: "123123123"))
-  }
-}
+//struct MovieCell_Previews: PreviewProvider {
+//  static var previews: some View {
+//    MovieCell(movie: MovieDetailQuery.Data.Movie(id: "500",
+//                                                 description: "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+//                                                 director: "Sam Raimi",
+//                                                 duration: "121 min",
+//                                                 posterUrl: "spiderman",
+//                                                 rating: "PG-13",
+//                                                 releasedOn: "2016",
+//                                                 title: "Spider-Man",
+//                                                 totalGross: "123123123"))
+//  }
+//}

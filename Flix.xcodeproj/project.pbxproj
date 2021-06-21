@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6402493A26803CFC00D024FC /* MovieDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402493926803CFC00D024FC /* MovieDetail.graphql */; };
+		6402493B26803CFC00D024FC /* MovieDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402493926803CFC00D024FC /* MovieDetail.graphql */; };
+		6402493D26803D0500D024FC /* MovieList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402493C26803D0500D024FC /* MovieList.graphql */; };
+		6402493E26803D0500D024FC /* MovieList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402493C26803D0500D024FC /* MovieList.graphql */; };
+		6402494026803D0B00D024FC /* UserDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402493F26803D0B00D024FC /* UserDetail.graphql */; };
+		6402494126803D0B00D024FC /* UserDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402493F26803D0B00D024FC /* UserDetail.graphql */; };
+		6402494326803D1100D024FC /* UserList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402494226803D1100D024FC /* UserList.graphql */; };
+		6402494426803D1100D024FC /* UserList.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 6402494226803D1100D024FC /* UserList.graphql */; };
+		640249462680470100D024FC /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640249452680470100D024FC /* MovieDetailViewModel.swift */; };
+		640249472680470100D024FC /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640249452680470100D024FC /* MovieDetailViewModel.swift */; };
+		64024949268047E700D024FC /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64024948268047E700D024FC /* UserDetailViewModel.swift */; };
+		6402494A268047E700D024FC /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64024948268047E700D024FC /* UserDetailViewModel.swift */; };
 		640A2E362667505F0001425E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A2E352667505F0001425E /* MainView.swift */; };
 		640A2E372667505F0001425E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A2E352667505F0001425E /* MainView.swift */; };
 		6416FD4426632C5D007141FA /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4326632C5D007141FA /* Apollo.swift */; };
@@ -19,10 +31,6 @@
 		6416FD5126633575007141FA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4F26633575007141FA /* Movie.swift */; };
 		6418DA342664DCBE000964D7 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418DA332664DCBE000964D7 /* MovieDetailView.swift */; };
 		6418DA352664DCBE000964D7 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418DA332664DCBE000964D7 /* MovieDetailView.swift */; };
-		642D36FA265B5C2400EC7FF7 /* GetMovie.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 642D36F8265B5C2400EC7FF7 /* GetMovie.graphql */; };
-		642D36FD265B5FD500EC7FF7 /* GetUser.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 642D36FB265B5FD500EC7FF7 /* GetUser.graphql */; };
-		642D3700265B60CC00EC7FF7 /* GetUsers.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 642D36FE265B60CC00EC7FF7 /* GetUsers.graphql */; };
-		646BE45E265B4658009CB03D /* GetMovies.graphql in Sources */ = {isa = PBXBuildFile; fileRef = 646BE45C265B4658009CB03D /* GetMovies.graphql */; };
 		646BE461265B4AD5009CB03D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 646BE460265B4AD5009CB03D /* schema.json */; };
 		646BE462265B4AD5009CB03D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 646BE460265B4AD5009CB03D /* schema.json */; };
 		6476BDC1265B56CF0002CE95 /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6476BDC0265B56CF0002CE95 /* ApolloCore */; };
@@ -85,20 +93,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6402493926803CFC00D024FC /* MovieDetail.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MovieDetail.graphql; sourceTree = "<group>"; };
+		6402493C26803D0500D024FC /* MovieList.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MovieList.graphql; sourceTree = "<group>"; };
+		6402493F26803D0B00D024FC /* UserDetail.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserDetail.graphql; sourceTree = "<group>"; };
+		6402494226803D1100D024FC /* UserList.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserList.graphql; sourceTree = "<group>"; };
+		640249452680470100D024FC /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		64024948268047E700D024FC /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		640A2E352667505F0001425E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6416FD4326632C5D007141FA /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		6416FD472663311B007141FA /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		6416FD4B266333D7007141FA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6416FD4F26633575007141FA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6418DA332664DCBE000964D7 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
-		642D36F8265B5C2400EC7FF7 /* GetMovie.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetMovie.graphql; sourceTree = "<group>"; };
-		642D36FB265B5FD500EC7FF7 /* GetUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetUser.graphql; sourceTree = "<group>"; };
-		642D36FE265B60CC00EC7FF7 /* GetUsers.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetUsers.graphql; sourceTree = "<group>"; };
 		64660E73265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64660E74265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64660E75265B662600A0CE79 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64660E76265B662600A0CE79 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		646BE45C265B4658009CB03D /* GetMovies.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetMovies.graphql; sourceTree = "<group>"; };
 		646BE460265B4AD5009CB03D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		649DF85C2655EF2C005A69C1 /* FlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixApp.swift; sourceTree = "<group>"; };
 		649DF85D2655EF2C005A69C1 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
@@ -161,7 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				649DF85D2655EF2C005A69C1 /* MovieListView.swift */,
+				6418DA332664DCBE000964D7 /* MovieDetailView.swift */,
 				6416FD472663311B007141FA /* MovieListViewModel.swift */,
+				640249452680470100D024FC /* MovieDetailViewModel.swift */,
 				6416FD4B266333D7007141FA /* MovieCell.swift */,
 			);
 			path = MovieListView;
@@ -171,9 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				6416FD462663307C007141FA /* MovieListView */,
-				6418DA332664DCBE000964D7 /* MovieDetailView.swift */,
 				64A111B62665C8C20094D018 /* UserListView */,
-				64A111BD2665CC4E0094D018 /* UserDetailView.swift */,
 				640A2E352667505F0001425E /* MainView.swift */,
 			);
 			path = Views;
@@ -266,7 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				64A111B32665C8A90094D018 /* UserListView.swift */,
+				64A111BD2665CC4E0094D018 /* UserDetailView.swift */,
 				64A111B72665C99A0094D018 /* UserListViewModel.swift */,
+				64024948268047E700D024FC /* UserDetailViewModel.swift */,
 				64A111BA2665CA970094D018 /* UserCell.swift */,
 				64A111C02665D9BE0094D018 /* ProfileImageView.swift */,
 			);
@@ -284,10 +296,10 @@
 		64BA8E2B26657CC4005BA4C0 /* Queries */ = {
 			isa = PBXGroup;
 			children = (
-				646BE45C265B4658009CB03D /* GetMovies.graphql */,
-				642D36F8265B5C2400EC7FF7 /* GetMovie.graphql */,
-				642D36FB265B5FD500EC7FF7 /* GetUser.graphql */,
-				642D36FE265B60CC00EC7FF7 /* GetUsers.graphql */,
+				6402493926803CFC00D024FC /* MovieDetail.graphql */,
+				6402493C26803D0500D024FC /* MovieList.graphql */,
+				6402493F26803D0B00D024FC /* UserDetail.graphql */,
+				6402494226803D1100D024FC /* UserList.graphql */,
 			);
 			path = Queries;
 			sourceTree = "<group>";
@@ -428,10 +440,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6402494326803D1100D024FC /* UserList.graphql in Resources */,
+				6402493D26803D0500D024FC /* MovieList.graphql in Resources */,
+				6402493A26803CFC00D024FC /* MovieDetail.graphql in Resources */,
 				646BE461265B4AD5009CB03D /* schema.json in Resources */,
 				649DF89C2655EF71005A69C1 /* README.md in Resources */,
 				649DF89B2655EF71005A69C1 /* LICENSE.md in Resources */,
 				649DF8892655EF32005A69C1 /* Assets.xcassets in Resources */,
+				6402494026803D0B00D024FC /* UserDetail.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +455,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6402494426803D1100D024FC /* UserList.graphql in Resources */,
 				646BE462265B4AD5009CB03D /* schema.json in Resources */,
+				6402493B26803CFC00D024FC /* MovieDetail.graphql in Resources */,
+				6402494126803D0B00D024FC /* UserDetail.graphql in Resources */,
+				6402493E26803D0500D024FC /* MovieList.graphql in Resources */,
 				649DF88A2655EF32005A69C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +508,7 @@
 			files = (
 				649DF8872655EF32005A69C1 /* MovieListView.swift in Sources */,
 				640A2E362667505F0001425E /* MainView.swift in Sources */,
+				64024949268047E700D024FC /* UserDetailViewModel.swift in Sources */,
 				649DF8852655EF32005A69C1 /* FlixApp.swift in Sources */,
 				64A111B82665C99A0094D018 /* UserListViewModel.swift in Sources */,
 				6418DA342664DCBE000964D7 /* MovieDetailView.swift in Sources */,
@@ -497,6 +518,7 @@
 				64EEBF42265DA1DB008D63A8 /* API.swift in Sources */,
 				6416FD4C266333D7007141FA /* MovieCell.swift in Sources */,
 				64A111BB2665CA970094D018 /* UserCell.swift in Sources */,
+				640249462680470100D024FC /* MovieDetailViewModel.swift in Sources */,
 				64A111B42665C8A90094D018 /* UserListView.swift in Sources */,
 				6416FD5026633575007141FA /* Movie.swift in Sources */,
 				6416FD482663311B007141FA /* MovieListViewModel.swift in Sources */,
@@ -511,20 +533,18 @@
 				64CEACFE265B706C001632D8 /* Tests_macOS.swift in Sources */,
 				64A111B92665C99A0094D018 /* UserListViewModel.swift in Sources */,
 				6416FD5126633575007141FA /* Movie.swift in Sources */,
+				640249472680470100D024FC /* MovieDetailViewModel.swift in Sources */,
 				64A111BF2665CC4E0094D018 /* UserDetailView.swift in Sources */,
 				640A2E372667505F0001425E /* MainView.swift in Sources */,
-				646BE45E265B4658009CB03D /* GetMovies.graphql in Sources */,
 				64A111C22665D9BE0094D018 /* ProfileImageView.swift in Sources */,
 				6416FD4D266333D7007141FA /* MovieCell.swift in Sources */,
-				642D3700265B60CC00EC7FF7 /* GetUsers.graphql in Sources */,
+				6402494A268047E700D024FC /* UserDetailViewModel.swift in Sources */,
 				64A111B52665C8A90094D018 /* UserListView.swift in Sources */,
 				6416FD4526632C5D007141FA /* Apollo.swift in Sources */,
 				6418DA352664DCBE000964D7 /* MovieDetailView.swift in Sources */,
-				642D36FA265B5C2400EC7FF7 /* GetMovie.graphql in Sources */,
 				649DF8862655EF32005A69C1 /* FlixApp.swift in Sources */,
 				64EEBF43265DA1DB008D63A8 /* API.swift in Sources */,
 				64A111BC2665CA970094D018 /* UserCell.swift in Sources */,
-				642D36FD265B5FD500EC7FF7 /* GetUser.graphql in Sources */,
 				6416FD492663311B007141FA /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct UserCell: View {
-  var user: GetUsersQuery.Data.User
-  
+  @StateObject private var viewModel = UserDetailViewModel()
+  var user: UserListQuery.Data.User
+    
   var body: some View {
     NavigationLink(destination: UserDetailView(user: user)) {
       HStack {
@@ -18,15 +19,20 @@ struct UserCell: View {
         VStack(alignment: .leading, spacing: 10) {
           Text(user.name)
                     
-          Text(user.username)
+//          Text(user.username)
         }
       }
     }
   }
 }
 
-struct UserCell_Previews: PreviewProvider {
-    static var previews: some View {
-      UserCell(user: GetUsersQuery.Data.User(id: "200", avatarUrl: "conradwt", name: "Conrad Taylor", username: "conradwt", email: "conradwt@gmail.com"))
-    }
-}
+//struct UserCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//      UserCell(user: UserDetailQuery.Data.User(id: "200",
+//                                               avatarUrl: "conradwt",
+//                                               email: "conradwt@gmail.com",
+//                                               memberSince: "2021",
+//                                               name: "Conrad Taylor",
+//                                               username: "conradwt"))
+//    }
+//}

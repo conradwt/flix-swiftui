@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MovieListView: View {
   @StateObject private var viewModel = MovieListViewModel()
   
@@ -34,6 +35,7 @@ struct MovieListView: View {
   }
 }
 
+@available(iOS 15.0, *)
 struct MovieListView_Previews: PreviewProvider {
   static var previews: some View {
     MovieListView()

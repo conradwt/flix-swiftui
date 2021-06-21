@@ -8,7 +8,7 @@
 import Foundation
 
 final class MovieListViewModel: ObservableObject {
-  @Published var movies = [GetMoviesQuery.Data.Movie]()
+  @Published var movies = [MovieListQuery.Data.Movie]()
   @Published var isLoading = false
 //  @Published var alertItem: AlertItem?
   
@@ -16,14 +16,14 @@ final class MovieListViewModel: ObservableObject {
     isLoading = true
     
     Network.shared.apollo
-      .fetch(query: GetMoviesQuery()) { [weak self] result in
+      .fetch(query: MovieListQuery(filter: nil)) { [weak self] result in
         DispatchQueue.main.async {
           self?.isLoading = false
           
           switch result {
           case .success(let graphQLResult):
             if let movies = graphQLResult.data?.movies {
-              self?.movies = movies as! [GetMoviesQuery.Data.Movie]
+              self?.movies = movies as! [MovieListQuery.Data.Movie]
             }
             
           case .failure(let error):
