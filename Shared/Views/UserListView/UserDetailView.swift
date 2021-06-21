@@ -7,12 +7,13 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct UserDetailView: View {
   var user: UserListQuery.Data.User
   
   var body: some View {
     VStack {
-      ProfileImageView(imageName: user.avatarUrl, width: 100, height: 100)
+      ProfileImageView(imageUrl: user.avatarUrl, width: 100, height: 100)
         .padding()
       
       Section(header: Text("Personal Info")) {
