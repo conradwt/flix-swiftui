@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct MainView: View {
   var body: some View {
     TabView {
@@ -24,7 +23,6 @@ struct MainView: View {
   }
 }
 
-@available(iOS 15.0, *)
 struct MainView_Previews: PreviewProvider {
   static var previews: some View {
     MainView()

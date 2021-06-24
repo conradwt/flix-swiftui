@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct MovieCell: View {
   @StateObject private var viewModel = MovieDetailViewModel()
   var movie: MovieListQuery.Data.Movie
@@ -15,10 +14,7 @@ struct MovieCell: View {
   var body: some View {
     NavigationLink(destination: MovieDetailView(movie: movie)) {
       HStack {
-        Image("placeholder")
-          .resizable()
-          .scaledToFit()
-          .frame(width: 100, height: 148)
+        MovieImageView(imageUrl: movie.posterUrl, width: 100, height: 148)
 
         VStack(alignment: .leading, spacing: 10) {
           Text(movie.title)

@@ -19,6 +19,8 @@
 		640249472680470100D024FC /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640249452680470100D024FC /* MovieDetailViewModel.swift */; };
 		64024949268047E700D024FC /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64024948268047E700D024FC /* UserDetailViewModel.swift */; };
 		6402494A268047E700D024FC /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64024948268047E700D024FC /* UserDetailViewModel.swift */; };
+		6402494C2680689400D024FC /* MovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402494B2680689400D024FC /* MovieImageView.swift */; };
+		6402494D2680689400D024FC /* MovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402494B2680689400D024FC /* MovieImageView.swift */; };
 		640A2E362667505F0001425E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A2E352667505F0001425E /* MainView.swift */; };
 		640A2E372667505F0001425E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A2E352667505F0001425E /* MainView.swift */; };
 		6416FD4426632C5D007141FA /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416FD4326632C5D007141FA /* Apollo.swift */; };
@@ -99,13 +101,14 @@
 		6402494226803D1100D024FC /* UserList.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UserList.graphql; sourceTree = "<group>"; };
 		640249452680470100D024FC /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		64024948268047E700D024FC /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		6402494B2680689400D024FC /* MovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageView.swift; sourceTree = "<group>"; };
 		640A2E352667505F0001425E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6416FD4326632C5D007141FA /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		6416FD472663311B007141FA /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		6416FD4B266333D7007141FA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		6416FD4F26633575007141FA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6418DA332664DCBE000964D7 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
-		64660E73265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64660E73265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64660E74265B662600A0CE79 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64660E75265B662600A0CE79 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64660E76265B662600A0CE79 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,7 @@
 				6416FD472663311B007141FA /* MovieListViewModel.swift */,
 				640249452680470100D024FC /* MovieDetailViewModel.swift */,
 				6416FD4B266333D7007141FA /* MovieCell.swift */,
+				6402494B2680689400D024FC /* MovieImageView.swift */,
 			);
 			path = MovieListView;
 			sourceTree = "<group>";
@@ -508,6 +512,7 @@
 			files = (
 				649DF8872655EF32005A69C1 /* MovieListView.swift in Sources */,
 				640A2E362667505F0001425E /* MainView.swift in Sources */,
+				6402494C2680689400D024FC /* MovieImageView.swift in Sources */,
 				64024949268047E700D024FC /* UserDetailViewModel.swift in Sources */,
 				649DF8852655EF32005A69C1 /* FlixApp.swift in Sources */,
 				64A111B82665C99A0094D018 /* UserListViewModel.swift in Sources */,
@@ -534,6 +539,7 @@
 				64A111B92665C99A0094D018 /* UserListViewModel.swift in Sources */,
 				6416FD5126633575007141FA /* Movie.swift in Sources */,
 				640249472680470100D024FC /* MovieDetailViewModel.swift in Sources */,
+				6402494D2680689400D024FC /* MovieImageView.swift in Sources */,
 				64A111BF2665CC4E0094D018 /* UserDetailView.swift in Sources */,
 				640A2E372667505F0001425E /* MainView.swift in Sources */,
 				64A111C22665D9BE0094D018 /* ProfileImageView.swift in Sources */,
@@ -631,6 +637,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -684,6 +692,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -700,7 +710,7 @@
 				DEVELOPMENT_TEAM = RX8KMMGN2G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -722,7 +732,7 @@
 				DEVELOPMENT_TEAM = RX8KMMGN2G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -753,7 +763,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.conradtaylor.Flix;
 				PRODUCT_NAME = Flix;
 				SDKROOT = macosx;
@@ -778,7 +788,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.conradtaylor.Flix;
 				PRODUCT_NAME = Flix;
 				SDKROOT = macosx;

@@ -14,7 +14,7 @@ struct UserCell: View {
   var body: some View {
     NavigationLink(destination: UserDetailView(user: user)) {
       HStack {
-        ProfileImageView(imageName: user.avatarUrl, width: 75, height: 75)
+        ProfileImageView(imageUrl: user.avatarUrl, width: 75, height: 75)
         
         VStack(alignment: .leading, spacing: 10) {
           Text(user.name)

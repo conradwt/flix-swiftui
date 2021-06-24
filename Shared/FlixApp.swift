@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 @main
 struct FlixApp: App {
   var body: some Scene {
