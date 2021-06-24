@@ -6,11 +6,11 @@ The purpose of this project is to implement an application where fans can commen
 
 ## Software requirements
 
-- Xcode 12.5 or newer
+- Xcode 13.0 or newer
 
-- iOS 14.5.1 or newer
+- iOS 15.0 or newer
 
-- Swift 5.4 or newer
+- Swift 5.5 or newer
 
 ## Quick Installation
 
