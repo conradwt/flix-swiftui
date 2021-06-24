@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct MovieDetailView: View {
   var movie: MovieListQuery.Data.Movie
   

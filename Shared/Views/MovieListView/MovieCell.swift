@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct MovieCell: View {
   @StateObject private var viewModel = MovieDetailViewModel()
   var movie: MovieListQuery.Data.Movie

@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct UserDetailView: View {
   var user: UserListQuery.Data.User
   

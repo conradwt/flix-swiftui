@@ -36,7 +36,6 @@ struct ProfileImageView: View {
   }
 }
 
-@available(iOS 15.0, *)
 struct ProfileImageView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileImageView(imageUrl: "https://www.gravatar.com/avatar/da6b3c868c62469a4ede0a3cd9d0275a?s=100&d=robohash",

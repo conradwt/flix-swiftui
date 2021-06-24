@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct MovieImageView: View {
   var imageUrl: String
   var width: CGFloat
@@ -35,7 +34,6 @@ struct MovieImageView: View {
     }
 }
 
-@available(iOS 15.0, *)
 struct MovieImageView_Previews: PreviewProvider {
     static var previews: some View {
       MovieImageView(imageUrl: "http://localhost:4000/uploads/movie/posters/131/spiderman-thumb.png",

@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct UserCell: View {
   @StateObject private var viewModel = UserDetailViewModel()
   var user: UserListQuery.Data.User
